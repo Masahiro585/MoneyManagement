@@ -1,11 +1,17 @@
---2019-12-02 19:57:23--  https://raw.githubusercontent.com/svenfuchs/rails-i18n/master/rails/locale/ja.yml
-raw.githubusercontent.com (raw.githubusercontent.com) をDNSに問いあわせています... 151.101.108.133
-raw.githubusercontent.com (raw.githubusercontent.com)|151.101.108.133|:443 に接続しています... 接続しました。
-HTTP による接続要求を送信しました、応答を待っています... 200 OK
-長さ: 5117 (5.0K) [text/plain]
-`ja.yml' に保存中
-
-     0K ....                                                  100% 2.84M=0.002s
-
-2019-12-02 19:57:24 (2.84 MB/s) - `ja.yml' へ保存完了 [5117/5117]
-
+ja:
+  activerecord:
+    errors:
+      messages:
+        record_invaild: "バリデーションに失敗しました: %{errors}"
+        restrict_dependent_destroy:
+          has_one: "%{record}が存在しているので削除できません"
+          has_many: "%{record}が存在しているので削除できません"
+      models:
+        user: ユーザー
+        attributes:
+        user:
+        id: ID
+        name: 名称
+        descripution: 詳しい説明
+        created_at: 登録日時
+        updated_at: 更新日時
