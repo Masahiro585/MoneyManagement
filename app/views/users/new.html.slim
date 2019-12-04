@@ -1,17 +1,16 @@
-h1 ユーザーの新規登録/編集
+h1 ユーザーの登録/編集
 
 .nav.justify-content-end
   = link_to 'ホーム', users_path, class: 'nav-link'
 
 = form_with model: @user, local: true do |f|
-  .form_group
-    = f.label :name, '名前'
+  .form-group
+    = f.label :name, 'ユーザー名'
     = f.text_field :name, class: 'form-control', id: 'user_name'
-  .form_group
+  .form-group
     = f.label :password, 'パスワード'
     = f.password_field :password, class: 'form-control', minlength: "8", maxlength: "16"
-  .form_group
+  .form-group
     = f.label :password_confirmation, 'パスワード(確認)'
     = f.password_field :password, class: 'form-control', minlength: "8", maxlength: "16"
-  =f.submit '登録/編集する', class: 'btn btn-primary'
-  =f.submit '削除する', class: 'btn btn-primary'
+  = f.submit '登録', class: 'btn btn-primary'
