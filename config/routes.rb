@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'plans/index'
+  get 'plans/show'
+  get 'plans/new'
+  get 'plans/edit'
   get '/login', to: 'sessions#new'
   post '/login', to: 'sessions#create'
   delete '/logout', to:'sessions#destroy'

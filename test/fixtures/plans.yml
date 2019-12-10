@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  comment: MyText
+  source_amount: 1
+  target_amount: 1
+  limit: MyString
+  date: MyString
+
+two:
+  name: MyString
+  comment: MyText
+  source_amount: 1
+  target_amount: 1
+  limit: MyString
+  date: MyString
